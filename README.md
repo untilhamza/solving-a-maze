@@ -1,7 +1,7 @@
 # solving-a-maze
 This was my first project on my journey of teaching my self about data structures and algorithms. 
 
-It is a program to find a path in a maze that leads on an exit from any starting point. The path (road or corridor) is marked by zeros (0) while the  walls of the maze are maked by ones (1) and the exit is labelled with the number 2.
+It is a program to find a path in a maze that leads on an exit from any starting point. The path (road or corridor) is marked by zeros (0) while the  walls of the maze are maked by ones (1) and the exit is labelled with the number 2. There are many possible routes that can be taken but only one leads to the exit and the program tried all possible routes until it hits and a dead end and reversing back on that path or until it reached the exit.
 
 In my solution, I wanted to fully understand how recursion works, so intead of using recursion directly I implemented a stack that mimics that processing of recursion. The square or position being investigated is top of my stack and if we fail to find a way forward from that position we pop it and go back to the previous position that had been pushed onto the stack.
 
